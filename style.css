@@ -62,9 +62,41 @@ a:hover {
 .list-inline li {
   display: inline-block;
   padding: 20px;
+  margin: 0px;
 }
 
 .purple-text {
   color: rgb(57, 20, 99);
+}
+
+#sidebar {
+  position: fixed;
+  width: 100px;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+}
+
+#page-content {
+  margin-left: 100px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
 
